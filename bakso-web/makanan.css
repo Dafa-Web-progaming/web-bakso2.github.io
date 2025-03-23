@@ -336,7 +336,7 @@ footer {
   color: white;
 }
 /* mobile */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .container1 {
     background-color: rebeccapurple;
     flex-direction: column;
