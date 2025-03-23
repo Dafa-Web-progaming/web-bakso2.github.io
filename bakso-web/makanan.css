@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(221, 212, 212);
+  /* height: 100vh; */
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* flex-wrap: wrap; */
+  background-color: rgb(216, 52, 52);
+  padding: 15px;
+}
+/* container 1 */
+.container1 h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  color: rgb(69, 5, 5);
+}
+.container1 .navlist a {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 30px;
+  cursor: pointer;
+}
+.navlist a:hover {
+  color: rgb(84, 30, 30);
+}
+/* Konten  */
+.konten {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+.konten h1 {
+  margin: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+.konten img {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 60px;
+  align-self: flex-start;
+  border-radius: 20px 20px;
+  border: 2px solid rgb(129, 30, 12);
+}
+.konten-logo {
+  margin-right: 100px;
+}
+.konten-logo p {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+}
+.btn-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-more button {
+  margin: 25px;
+  padding: 20px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+.btn-more a {
+  text-decoration: none;
+}
+.btn-more button:hover {
+  background-color: #cc5500;
+}
+
+/* container 2 */
+.container2 {
+  margin: 110px;
+  /* padding: 10px; */
+}
+.container2 h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  margin: 30px;
+}
+
+.makanan-konten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* width: 70%; */
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.menu img {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.deskripsi-konten {
+  max-width: 400px;
+}
+
+.deskripsi-konten h2 {
+  font-size: 25px;
+  color: #333;
+}
+
+.deskripsi-konten p {
+  font-size: 20px;
+  color: #666;
+}
+.reverse,
+.deskripsi-konten p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+/* Membalik posisi gambar dan teks untuk yang kedua */
+.reverse {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* container 3 */
+/* Wrapper utama agar Menu Minuman dan Cabang Toko sejajar */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 50px;
+  padding: 20px;
+}
+
+.menu-minuman,
+.cabang-toko {
+  background-color: #fbf5f5;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-minuman h1,
+.cabang-toko h1 {
+  text-align: center;
+  margin: 5px;
+}
+
+.wadah {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.kartu,
+.cabang-konten {
+  width: 180px;
+  padding: 15px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.btn button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px;
+}
+
+.btn button:hover {
+  background-color: #cc5500;
+}
+
+.cabang-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.kartu img,
+.cabang-konten img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.kartu:hover,
+.cabang-konten:hover {
+  transform: scale(1.05);
+}
+
+/* container 5 */
+.kontak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f6f0f0;
+}
+
+.konten-kontak {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(126, 16, 236);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.judul-kontak h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  color: white;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.btn-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn-cta button {
+  background-color: #ff6600;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-cta button:hover {
+  background-color: #cc5500;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 2em;
+  background-color: rebeccapurple;
+}
+.icon i {
+  font-size: 30px;
+  color: wheat;
+  margin: 20px;
+}
+.copyrigfht p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.3rem;
+  color: white;
+}
+/* mobile */
+@media screen and (max-width: 480px) {
+  .container1 {
+    background-color: rebeccapurple;
+    flex-direction: column;
+  }
+
+  .container1 h1 {
+    color: white;
+  }
+  .navlist a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .konten {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .konten-logo h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    width: 115%;
+  }
+
+  .konten-logo p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1rem;
+    width: 125%;
+  }
+
+  .konten img {
+    width: 300px;
+    height: 250px;
+  }
+  .btn-cta button {
+    background-color: rgb(38, 3, 73);
+  }
+}
